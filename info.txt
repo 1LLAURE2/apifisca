@@ -1,0 +1,4 @@
+comandos
+------------
+php artisan serve --host="192.168.0.2"
+ng serve --host=192.168.1.1

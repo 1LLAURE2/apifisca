@@ -7,7 +7,7 @@ use App\Http\Controllers\TipoIdentificacionController;
 use App\Http\Controllers\V1\ProductsController;
 use App\Http\Controllers\V1\AuthController;
 use App\Http\Controllers\TipoServicioController;
-use App\Http\Controllers\V1\ServicioController;
+use App\Http\Controllers\ServicioController;
 // use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -75,7 +75,7 @@ Route::prefix('v1')->group(function () {
         Route::post('products', [ProductsController::class, 'store']);
         Route::put('products/{id}', [ProductsController::class, 'update']);
         Route::delete('products/{id}', [ProductsController::class, 'destroy']);
-        
+
         // TODO: Se deben agregar mas metodos
         // !
         // ?
@@ -83,7 +83,7 @@ Route::prefix('v1')->group(function () {
 
         // FIXME: REPARAR, ARREGLARME
         // HACK: ATAJO O ABREVIADO
-        // XXX: 
+        // XXX:
         // [ ]: Hacer algo o hacer esto primero y luego [] ....
         // [x]: Algo que he hecho
         // BUG: ERROR
